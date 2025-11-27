@@ -64,11 +64,8 @@ body{
 
 .hero-text h1{
     font-size: 72px;
-    font-weight: 717;
-}
-
-.hero-text h1 {
-    color: #1463ff;
+    font-weight: 717px;
+    padding-left: 50px;
 }
 
 .hero-text p{
@@ -76,10 +73,12 @@ body{
     line-height: 1.6;
     color: #444;
     font-size: 20px;
+    padding-left: 50px;
 }
 
 .hero-button{
     margin-top: 30px;
+    padding-left: 50px;
     
 }
 
@@ -109,5 +108,5 @@ body{
     width: 416px;
     height: 494px;
     border-radius: 20px;
-   
+    
 }

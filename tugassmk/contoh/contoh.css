@@ -1,0 +1,150 @@
+body {
+  background-color: #f5f7fb;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo img{
+    width: 38px; 
+    height: 38px;
+}
+
+
+.nav-link{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.btn-contact{
+    padding: 15px 35px;
+    background: #1453ff;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    width: 134px;
+    height: 54px;
+    font-size: 18px;
+}
+
+.text-hero{
+    font-size: 65px;
+}
+
+
+.hero-img {
+  border-radius: 20px;
+}
+
+.btn{
+    text-align: center;
+  
+    font-size: 20px;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  border: none;
+  width: 247px;
+  height: 68px;
+}
+
+.btn-outline-primary {
+  border-width: 2px;
+  width: 186px;
+  height: 68px;
+  
+}
+
+.profil{
+  background-color: white;
+  height: 100vh;
+}
+
+
+.box {
+  width: 250px;
+  padding: 50px; 
+  margin: 10px; 
+  background-color: rgb(209, 209, 209); 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+ 
+}
+
+.box img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.fasilitas h4{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.fasilitas p{
+    font-size: 14px;
+}
+
+.profil-sb{
+    background-color: white;
+    height: 100vh;
+}
+
+.smn img{
+    width: 500px;
+    height: 350px;
+}
+
+.smn h4{
+    font-size: 32px;
+    width: 520px;
+    height: 80px;
+    font-weight: bold;
+}
+
+.smn p{
+    font-size: 18px;
+    width: 568px;
+    height: 60px;
+    margin-top: 40px;
+}
+
+.text-sambutan{
+    margin-top: 50px;
+}
+
+
+.btn-baca{
+    padding: 18px 18px;
+    background: #1453ff;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    
+    font-size: 14px;
+}
+
