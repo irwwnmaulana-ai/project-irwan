@@ -237,7 +237,7 @@ body {
 }
 
 #berita{
-    height: 150vh;
+    height: 170vh;
     background: rgb(231, 229, 229);
 }
 
@@ -282,6 +282,22 @@ body {
     justify-content: start;
 
 }
+
+.btn-berita{
+    width: 212px;
+    height: 62px;
+    background: #362FD9;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 73px;
+}
+
+#documentasi{
+    height: 90vh;
+    background: #362FD9;
+}
+
+
 
 
 
