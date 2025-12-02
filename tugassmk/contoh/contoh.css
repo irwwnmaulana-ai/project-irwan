@@ -111,87 +111,127 @@ body {
     font-size: 14px;
 }
 
-.profil-sb{
+.profil-sb {
     background-color: white;
-    height: 100vh;
+    padding: 100px 0;
+    height: auto;
+    min-height: 100vh;
 }
 
-.smn img{
-    width: 500px;
-    height: 350px;
+.profil-sb h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 50px;
 }
 
-.smn h4{
+.smn {
+    align-items: center;
+}
+
+.smn img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-sambutan {
+    padding-left: 40px;
+}
+
+.text-sambutan h4 {
     font-size: 32px;
-    width: 520px;
-    height: 80px;
     font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.3;
 }
 
-.smn p{
+.text-sambutan p {
     font-size: 18px;
-    width: 568px;
-    height: 60px;
-    margin-top: 40px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
 }
 
-.text-sambutan{
-    margin-top: 50px;
-}
-
-
-.btn-baca{
-    padding: 18px 18px;
+.btn-baca {
+    display: inline-block;
+    padding: 18px 35px;
     background: #1453ff;
     color: white;
     border-radius: 50px;
     text-decoration: none;
-    
     font-size: 14px;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.btn-baca:hover {
+    background: #0d46d6;
+}
+
+/* ===== JURUSAN SECTION ===== */
+#jurusan {
+    padding: 100px 0;
+    background: white;
+}
+
+#jurusan h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#jurusan > .container > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
 }
 
 .jurusan-card {
     background: #362FD9;
     color: white;
-    padding: 25px;
+    padding: 28px 25px;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    
-    width: 292px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     height: 219px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 292px;
 }
 
-
-
-/* Icon */
 .jurusan-card .icon {
-   
-    margin-left: -170px;
     background: #ffffff;
     padding: 12px;
     border-radius: 10px;
     display: inline-block;
-    margin-bottom: 18px;
-
-
+    margin-bottom: 20px;
+    display: flex;
+    justify-self: start;
+    align-items: start;
     
 }
 
-/* Title */
+.jurusan-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+
 .jurusan-card h3 {
     font-size: 18px;
     font-weight: 600;
-    margin-bottom: 55px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
-/* Button kecil (Details) */
 .details-btn {
     color: #ffffff;
     text-decoration: none;
     opacity: 0.9;
     font-size: 14px;
-    margin-left: -200px; 
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
 }
 
 #eskul{
@@ -296,7 +336,6 @@ body {
     height: 90vh;
     background: #362FD9;
 }
-
 
 
 

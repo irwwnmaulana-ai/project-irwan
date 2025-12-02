@@ -1,9 +1,11 @@
-body{
+/* ===== GLOBAL STYLES ===== */
+body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #f5f7fb;
+    font-family: "Poppins", sans-serif;
+    background: #f5f5f5;
 }
 
+/* ===== NAVBAR ===== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -11,7 +13,6 @@ body{
     padding: 20px 60px;
     background: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-
 }
 
 .logo {
@@ -19,28 +20,32 @@ body{
     align-items: center;
     gap: 10px;
 }
-.logo h1{
+
+.logo h1 {
     font-size: 30px;
     font-weight: bold;
 }
-.logo img{
-    width: 38px; 
+
+.logo img {
+    width: 38px;
+    height: 38px;
 }
 
-
-.nav-link{
+.nav-link {
     display: flex;
     gap: 25px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.nav-link a{
+.nav-link a {
     text-decoration: none;
     color: #333;
     font-size: 18px;
 }
 
-.btn-contact{
+.btn-contact {
     padding: 15px 35px;
     background: #1453ff;
     color: white;
@@ -51,62 +56,574 @@ body{
     font-size: 18px;
 }
 
-.hero{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 90px 90px ;
+/* ===== HERO SECTION ===== */
+#hero {
+    padding: 40px 0;
 }
 
-.hero-text{
-    max-width: 550px;
+.hero-bg {
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 100%);
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 60px 40px !important;
 }
 
-.hero-text h1{
-    font-size: 72px;
-    font-weight: 717px;
-    padding-left: 50px;
+.text-hero {
+    font-size: 65px;
+    line-height: 1.2;
 }
 
-.hero-text p{
-    margin-top: 10px;
-    line-height: 1.6;
-    color: #444;
+.btn {
     font-size: 20px;
-    padding-left: 50px;
+    padding: 20px 30px;
+    border-radius: 50px;
 }
 
-.hero-button{
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    width: 247px;
+    height: 68px;
+}
+
+.btn-outline-primary {
+    border-width: 2px;
+    width: 186px;
+    height: 68px;
+}
+
+/* ===== PROFIL SECTION ===== */
+.profil {
+    background-color: white;
+    padding: 80px 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+.profil h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.profil > .container:first-child p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.fasilitas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
     margin-top: 30px;
-    padding-left: 50px;
-    
 }
 
-.btn{
-    padding: 12px 22px ;
-    border-radius: 25px;
-    text-decoration: none;
+.box {
+    width: 250px;
+    padding: 40px 20px;
+    background: rgb(209, 209, 209);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.box h4 {
+    font-size: 15px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.primary{
+.box p {
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* ===== PROFIL SB SECTION ===== */
+.profil-sb {
+    background-color: white;
+    padding: 100px 0;
+    height: auto;
+    min-height: 100vh;
+}
+
+.profil-sb h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 50px;
+}
+
+.smn {
+    align-items: center;
+}
+
+.smn img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text-sambutan {
+    padding-left: 40px;
+}
+
+.text-sambutan h4 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.text-sambutan p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn-baca {
+    display: inline-block;
+    padding: 18px 35px;
     background: #1453ff;
     color: white;
-}
-
-.secondary{
-    border: 2px solid #1453ff;
-    color: #1453ff;
-    margin-left: 10px;
-}
-
-.sosmed{
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
     margin-top: 20px;
+    transition: background 0.3s;
 }
 
-.hero-image img{
-    width: 416px;
-    height: 494px;
-    border-radius: 20px;
+.btn-baca:hover {
+    background: #0d46d6;
+}
+
+/* ===== JURUSAN SECTION ===== */
+#jurusan {
+    padding: 100px 0;
+    background: white;
+}
+
+#jurusan h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#jurusan > .container > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.jurusan-card {
+    background: #362FD9;
+    color: white;
+    padding: 28px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 219px;
+    position: relative;
+    margin: 0 auto;
+    max-width: 292px;
+}
+
+.jurusan-card .icon {
+    background: #ffffff;
+    padding: 12px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 20px;
+    display: flex;
+    justify-self: start;
+    align-items: start;
     
+}
+
+.jurusan-card .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.jurusan-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.details-btn {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    font-size: 14px;
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+}
+
+/* ===== ESKUL SECTION ===== */
+#eskul {
+    padding: 100px 0;
+    background: rgb(231, 229, 229);
+    height: auto;
+    min-height: 100vh;
+}
+
+#eskul h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#eskul > .container > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.eskul-card {
+    background: #ffffff;
+    padding: 30px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    height: 265px;
+    margin: 0 auto 20px;
+    max-width: 285px;
+}
+
+.eskul-card .icon {
+    width: 54px;
+    height: 54px;
+    padding: 10px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.eskul-card .icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.eskul-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.eskul-card p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* ===== BERITA SECTION ===== */
+#berita {
+    padding: 100px 0;
+    background: rgb(231, 229, 229);
+    height: auto;
+    min-height: 170vh;
+}
+
+#berita h2 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+#berita > .container > p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 60px;
+}
+
+.berita-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 287px;
+    height: 332px;
+    border-radius: 10px;
+    margin: 0 auto 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.berita-card .image {
+    width: 100%;
+    height: 158px;
+    overflow: hidden;
+}
+
+.berita-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.berita-card > p {
+    font-size: 10px;
+    color: #888;
+    margin: 15px 15px 5px;
+    text-align: left;
+}
+
+.berita-card h5 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin: 10px 15px;
+    line-height: 1.4;
+    height: 45px;
+    overflow: hidden;
+}
+
+.berita-card a {
+    font-size: 10px;
+    width: 104px;
+    height: 12px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+    padding: 15px;
+}
+
+.btn-berita {
+    width: 212px;
+    height: 62px;
+    background: #362FD9;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    margin-top: 50px;
+    transition: background 0.3s;
+}
+
+.btn-berita:hover {
+    background: #2a25c7;
+}
+
+/* ===== DOCUMENTASI SECTION ===== */
+#documentasi {
+    height: 90vh;
+    background: #362FD9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#documentasi h2 {
+    color: white;
+    font-size: 2.5rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 20px 40px;
+    }
+    
+    .text-hero {
+        font-size: 55px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar {
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    
+    .nav-link {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .text-hero {
+        font-size: 45px;
+    }
+    
+    .hero-bg {
+        padding: 40px 20px !important;
+    }
+    
+    .text-sambutan {
+        padding-left: 0;
+        margin-top: 40px;
+        text-align: center;
+    }
+    
+    .text-sambutan h4 {
+        font-size: 28px;
+    }
+    
+    .fasilitas .col-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .box {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-link a {
+        font-size: 16px;
+    }
+    
+    .btn-contact {
+        padding: 12px 25px;
+        width: auto;
+        height: auto;
+    }
+    
+    .text-hero {
+        font-size: 35px;
+    }
+    
+    .btn-primary,
+    .btn-outline-primary {
+        width: 200px;
+        height: 60px;
+        padding: 15px 20px;
+    }
+    
+    .profil h2,
+    .profil-sb h2,
+    #jurusan h2,
+    #eskul h2,
+    #berita h2,
+    #documentasi h2 {
+        font-size: 2rem;
+    }
+    
+    .fasilitas .col-3 {
+        width: 100%;
+    }
+    
+    .jurusan-card,
+    .eskul-card,
+    .berita-card {
+        max-width: 100%;
+    }
+    
+    #berita {
+        min-height: auto;
+        padding-bottom: 50px;
+    }
+    
+    .btn-berita {
+        width: 180px;
+        height: 56px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar {
+        padding: 15px;
+    }
+    
+    .logo h1 {
+        font-size: 24px;
+    }
+    
+    .nav-link {
+        gap: 10px;
+    }
+    
+    .nav-link a {
+        font-size: 14px;
+    }
+    
+    .text-hero {
+        font-size: 28px;
+    }
+    
+    .btn {
+        font-size: 16px;
+    }
+    
+    .btn-primary,
+    .btn-outline-primary {
+        width: 100%;
+        max-width: 250px;
+        margin: 5px 0;
+    }
+    
+    .d-flex.gap-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .profil h2,
+    .profil-sb h2,
+    #jurusan h2,
+    #eskul h2,
+    #berita h2,
+    #documentasi h2 {
+        font-size: 1.8rem;
+    }
+    
+    #documentasi {
+        height: 70vh;
+        padding: 0 20px;
+    }
+    
+    #documentasi h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Utility classes untuk spacing yang lebih baik */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.row > * {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.mt-4 {
+    margin-top: 1.5rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
 }
