@@ -244,7 +244,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    width: 285px;
+    width: 265px;
     height: 265px;
 }
 
@@ -277,21 +277,15 @@ body {
 }
 
 #berita{
-    height: 170vh;
+    height: 190vh;
     background: rgb(231, 229, 229);
 }
 
 .berita-card{
     background: #ffffff;
-    width: 287px;
     height: 332px;
     border-radius: 10px;
     margin-top: 30px;
-}
-
-.berita-card .image{
-    width: 287px;
-    height: 158px;
 }
 
 .berita-card p{
@@ -333,8 +327,32 @@ body {
 }
 
 #documentasi{
-    height: 90vh;
+    height: 100vh;
     background: #362FD9;
+}
+
+.text-doc{
+    font-size: 40px;
+    width: 628px;
+    height: 98px;
+    color: #ffffff;
+}
+
+.documentasi-card{
+    width: 225px;
+    height: 275px;
+    border-radius: 4px;
+    background-image: url(images/icon-doc1.png);
+    margin-top: 59px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.documentasi-card .text-card{
+    width: 225px;
+    height: 166px;
+    border-radius: 2px;
+    background: #f5f5f5;
 }
 
 
