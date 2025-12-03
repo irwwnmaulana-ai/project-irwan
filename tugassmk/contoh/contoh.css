@@ -176,13 +176,18 @@ body {
     background: white;
 }
 
+.card-jurusan{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
 #jurusan h2 {
     font-size: 2.5rem;
     line-height: 1.3;
     margin-bottom: 20px;
 }
 
-#jurusan > .container > p {
+#jurusan  .container  p {
     font-size: 1.2rem;
     color: #666;
     margin-bottom: 60px;
@@ -197,7 +202,7 @@ body {
     height: 219px;
     position: relative;
     margin: 0 auto;
-    max-width: 292px;
+    width: 291px;
 }
 
 .jurusan-card .icon {
@@ -314,6 +319,7 @@ body {
     margin-left: 10px;
     display: flex;
     justify-content: start;
+    padding-top: 10px;
 
 }
 
@@ -326,36 +332,192 @@ body {
     margin-top: 73px;
 }
 
+/* section documentasi */
 #documentasi{
-    height: 100vh;
+    height: 110vh;
     background: #362FD9;
 }
 
-.text-doc{
-    font-size: 40px;
+.judul-doc{
     width: 628px;
     height: 98px;
     color: #ffffff;
+    
 }
 
-.documentasi-card{
-    width: 225px;
-    height: 275px;
-    border-radius: 4px;
-    background-image: url(images/icon-doc1.png);
-    margin-top: 59px;
+.isi-card-doc{
+    padding: 59px;
+}
+
+.card-doc {
+    width: 318px;
+    height: 384px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    background: #f0f0f0; /* fallback saat gambar belum load */
+}
+
+/* Area gambar */
+.card-image {
+    width: 100%;
+    height: 55%;                      /* sama seperti contoh */
+                                      /* ganti sesuai path */
+    background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
-.documentasi-card .text-card{
-    width: 225px;
+/* Box putih transparan */
+.card-text-doc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 166px;
-    border-radius: 2px;
-    background: #f5f5f5;
+    background: rgba(255, 255, 255, 0.55);  /* transparansi sesuai foto */
+    backdrop-filter: blur(3px);
+    padding: 25px 20px;
+    box-sizing: border-box;
 }
 
+/* Judul */
+.card-text-doc h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+    text-align: left;
+}
 
+/* Lokasi sekolah */
+.card-text-doc p {
+    font-size: 15px;
+    margin: 0;
+    color: #333;
+    line-height: 1.4;
+    text-align: left;
+}
+/* end section documentasi */
+
+/* Section Alumni */
+#alumni{
+    height: 115vh;
+    background: #ffffff;
+}
+
+.alumni-card {
+    display: flex;
+    gap: 20px;
+    width: 750px; /* lebar total layout seperti contoh */
+    align-items: flex-start;
+}
+
+/* Foto */
+.alumni-photo {
+    width: 218px;
+    height: 290px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Area teks */
+.alumni-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 10px; /* sama seperti contoh */
+}
+
+/* Nama */
+.alumni-text h2 {
+    font-size: 32px;       /* besar, persis seperti di foto */
+    font-weight: 700;
+    color: #2c2c2c;
+    line-height: 1.15;
+    margin: 0 0 18px 0;
+}
+
+/* Angkatan */
+.alumni-text h4 {
+    font-size: 17px;
+    font-weight: 400;
+    color: #333;
+    margin: 0 0 18px 0;
+}
+
+/* Deskripsi */
+.alumni-text p {
+    font-size: 15px;
+    color: #8d8d8d;      /* abu-abu muda seperti contoh */
+    max-width: 350px;
+    line-height: 1.5;
+    margin-bottom: 35px;
+}
+
+/* Link */
+.alumni-text .link {
+    font-size: 15px;
+    color: #0066cc;       /* biru seperti contoh */
+    text-decoration: none;
+    font-weight: 500;
+}
+/* end section alumni */
+
+/*  Footer */
+#footer{
+    height:251px;
+    background: #362FD9;
+}
+
+.footer-sbb {
+    width: 100%;
+    
+    padding: 50px 0;
+    color: #fff;
+}
+
+.footer-container {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* KIRI */
+.footer-left h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.footer-left p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #e9e9e9;
+    margin: 0;
+}
+
+/* KANAN */
+.footer-right {
+    text-align: right;
+    padding: 10px 0;
+}
+
+.footer-icons img {
+    width: 22px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-right .alamat {
+    margin-top: 12px;
+    color: #e9e9e9;
+    font-size: 15px;
+    line-height: 1.5;
+}
+/* end  Footer */
 
 
 
